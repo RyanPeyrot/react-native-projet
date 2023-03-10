@@ -15,3 +15,5 @@ L'application inclura un système de retour utilisateur, avec des notifications 
 L'application pourrait inclure un système de notification push pour alerter les utilisateurs des événements à venir ou des résultats de combats importants.
 
 L'application pourrait également inclure de la publicité via Google AdMob pour générer des revenus supplémentaires.
+
+Lien de lAPI UFC : https://developer.ufc.com/
