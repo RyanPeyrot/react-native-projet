@@ -7,17 +7,12 @@ const CardContainer = styled.View`
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
-`;
-
-const CardImage = styled.Image`
   width: 100%;
-  height: 100px;
 `;
 
 const CardContent = styled.View`
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   padding: 16px;
 `;
 
@@ -28,23 +23,21 @@ const CardName = styled.Text`
   margin-bottom: 8px;
 `;
 
-const CardWeight = styled.Text`
+const CardDate = styled.Text`
   font-size: 22px;
   font-weight: bold;
   color: #000;
-  //height: 200px;
 `;
 
-const Card = ({image, name, rank}) => {
+const Card = React.memo(({name, date}) => {
   return (
     <CardContainer>
-      <CardImage source={{uri: image}} />
       <CardContent>
         <CardName>{name}</CardName>
-        <CardWeight>{rank}</CardWeight>
+        <CardDate>{date}</CardDate>
       </CardContent>
     </CardContainer>
   );
-};
+});
 
 export default Card;

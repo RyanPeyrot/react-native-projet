@@ -6,6 +6,9 @@ const Header = styled.View`
   flex-direction: row;
   align-items: center;
   height: 60px;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 `;
 
 const Button = styled(TouchableOpacity)`
@@ -42,7 +45,7 @@ const HeaderWithButtons = ({navigation}) => {
         <ButtonText>Combattants</ButtonText>
       </Button>
       <Button onPress={onFightsPress}>
-        <ButtonText>Combats</ButtonText>
+        <ButtonText>Events</ButtonText>
       </Button>
       <Button onPress={onProfilePress}>
         <ButtonText>Profile</ButtonText>

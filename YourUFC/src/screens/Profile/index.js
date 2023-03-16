@@ -81,7 +81,7 @@ const ButtonText = styled.Text`
   font-weight: bold;
 `;
 
-const Profile = ({firstName, nickName, lastName, navigation}) => {
+const Profile = ({navigation}) => {
   return (
     <ProfileContainer>
       <Button onPress={() => navigation.goBack()}>
